@@ -19,11 +19,11 @@ class TableStreamBuilder<T> extends StatelessWidget {
 
   TableStreamBuilder(
       {this.initialData,
-      this.headerList,
       this.headerBuilder,
       this.cellBuilder,
       this.headerClickHandler,
       this.rowClickHandler,
+      @required this.headerList,
       @required this.stream,
       @required this.cellValueBuilder});
 
