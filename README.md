@@ -18,12 +18,15 @@ samples, guidance on mobile development, and a full API reference.
 ## Usage
 
 Use TableStreamBuilder widget and pass required data:
-stream: => pass data stream
-headerList: => headers of table
-cellValueBuilder: => build cell value for specified column
+
+- stream: => pass data stream
+- headerList: => headers of table
+- cellValueBuilder: => build cell value for specified column
+
 
 e.g.
 
+```
 TableStreamBuilder<UserModel>(
           stream: Mock.getUserStream(),
           headerList: ['Name', 'Age', 'Gender', 'Address'],
@@ -41,7 +44,7 @@ TableStreamBuilder<UserModel>(
             return '';
           },
         ));
-
+```
 
 ## TODO
 
